@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/3/trunk/studentzone/resources/com/mysql/jdbc/integration/jboss
+END
+MysqlValidConnectionChecker.class
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/3/trunk/studentzone/resources/com/mysql/jdbc/integration/jboss/MysqlValidConnectionChecker.class
+END
+ExtendedMysqlExceptionSorter.class
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/3/trunk/studentzone/resources/com/mysql/jdbc/integration/jboss/ExtendedMysqlExceptionSorter.class
+END

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+
+	<package name="default" extends="struts-default" namespace="/">
+		<result-types>
+			<result-type name="tiles"
+				class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		<!-- Ananda -->
+		<!-- interceptor for login -->
+		<interceptors>
+			<interceptor name="nlogin"
+				class="com.studentzone.interceptor.LoginInterceptor" />
+			<interceptor-stack name="loginStack">
+				<interceptor-ref name="servletConfig" />
+				<interceptor-ref name="params" />
+				<interceptor-ref name="nlogin" />
+				<interceptor-ref name="prepare" />
+				<interceptor-ref name="chain" />
+				<interceptor-ref name="modelDriven" />
+				<interceptor-ref name="fileUpload" />
+				<interceptor-ref name="staticParams" />
+				<interceptor-ref name="params" />
+				<interceptor-ref name="conversionError" />
+				<interceptor-ref name="validation" />
+				<interceptor-ref name="workflow" />
+			</interceptor-stack>
+			
+			<interceptor name="nlogin2"
+				class="com.studentzone.interceptor.AdminLoginInterceptor" />
+			<interceptor-stack name="adminLoginStack">
+				<interceptor-ref name="servletConfig" />
+				<interceptor-ref name="params" />
+				<interceptor-ref name="nlogin2" />
+				<interceptor-ref name="prepare" />
+				<interceptor-ref name="chain" />
+				<interceptor-ref name="modelDriven" />
+				<interceptor-ref name="fileUpload" />
+				<interceptor-ref name="staticParams" />
+				<interceptor-ref name="params" />
+				<interceptor-ref name="conversionError" />
+				<interceptor-ref name="validation" />
+				<interceptor-ref name="workflow" />
+			</interceptor-stack>
+		</interceptors>
+
+		<!-- <default-interceptor-ref name="loginStack"/> -->
+
+		<global-results>
+			<result name="login" type="tiles">/login.tiles</result>
+			<result name="adminlogin">adminLogin.jsp</result>
+		</global-results>
+		<action name="login" class="com.studentzone.action.LoginAction">
+			<result name="success" type="tiles">/login.tiles</result>
+		</action>
+		<action name="dologin" class="com.studentzone.action.LoginAction"
+			method="login">
+			<result name="success" type="tiles">/home.tiles</result>
+			<result name="input" type="tiles">/login.tiles</result>
+		</action>
+		<action name="logout" class="com.studentzone.action.LoginAction"
+			method="logout">
+			<result name="success" type="tiles">/login.tiles</result>
+			<result name="input" type="tiles">/login.tiles</result>
+		</action>
+		<action name="search" class="com.studentzone.action.searchAction"
+			method="searchByRollNo">
+			<interceptor-ref name="loginStack" />
+			<result name="success" type="redirectAction">
+				<param name="actionName">MyFriend</param>
+				<param name="friendID">${studentID}</param>
+			</result>
+			<result name="input" type="tiles">/studentnotfound.tiles</result>
+		</action>
+		<action name="home" class="com.studentzone.action.LoginAction"
+			method="home">
+			<interceptor-ref name="loginStack" />
+			<result name="success" type="tiles">/home.tiles</result>
+		</action>
+		<action name="NEWS" class="com.studentzone.action.NEWSAction"
+			method="getFullNEWS">
+			<interceptor-ref name="loginStack" />
+			<result name="success" type="tiles">/showNEWS.tiles</result>
+		</action>
+		<action name="Announcement" class="com.studentzone.action.AnnouncementAction"
+			method="getFullAnnouncement">
+			<interceptor-ref name="loginStack" />
+			<result name="success" type="tiles">/showannouncement.tiles</result>
+		</action>
+		<!-- Ananda -->
+
+		<!-- Aamir forgot page -->
+		<action name="forgotPassword" class="com.studentzone.action.ForgotPasswordAction"
+			method="forgotPassword">
+			<result name="success" type="tiles">/forgotPassword.tiles</result>
+		</action>
+		<action name="confirmEmail" class="com.studentzone.action.ForgotPasswordAction"
+			method="confirmEmail">
+			<result name="success" type="tiles">/forgotPassword.tiles</result>
+			<result name="error" type="tiles">/forgotPassword.tiles</result>
+		</action>
+		<!-- Aamir -->
+
+		<!-- Neha G -->
+		<!-- ********* Friend List************** -->
+		<action name="FriendList" class="com.studentzone.action.FriendList">
+			<interceptor-ref name="loginStack" />
+			<result type="tiles" name="SUCCESS">/FriendList.tiles</result>
+		</action>
+		<action name="MyFriend" class="com.studentzone.action.MyFriendAction">
+			<interceptor-ref name="loginStack" />
+			<result type="tiles" name="SUCCESS">/MyFriend.tiles</result>
+			<result type="chain" name="ERROR">FriendList</result>
+		</action>
+		<action name="friendAction" class="com.studentzone.action.FriendAction">
+			<interceptor-ref name="loginStack" />
+			<result type="chain" name="SUCCESS">MyFriend</result>
+			<result type="chain" name="ERROR">MyFriend</result>
+		</action>
+		<!-- ***** end of Friend List*********** -->
+		<!-- Neha G -->
+		 <!-- A. Nayak -->
+		<action name="gradesExecute" class="com.studentzone.action.GradesAction"
+			method="execute">
+			<interceptor-ref name="loginStack" />
+			<result name="success" type="tiles">/grades.tiles</result>
+		</action>
+		<action name="grades" class="com.studentzone.action.GradesAction"
+			method="calcGrade">
+			<interceptor-ref name="loginStack" />
+			<result name="success" type="tiles">/grades.tiles</result>
+		</action>
+		 <!-- A. Nayak -->
+		  <!-- D. Sarkar -->
+		<action name="subjects" class="com.studentzone.action.SubjectAction"
+			method="execute">
+			<interceptor-ref name="loginStack" />
+			<result name="success" type="tiles">/subjects.tiles</result>
+		</action>
+		 <!-- D. Sarkar -->
+
+		<action name="detailsInserted" class="com.studentzone.admin.action.DetailsInserted">
+			<interceptor-ref name="fileUpload">
+				<param name="maximumSize">2097152</param>
+				<param name="allowedTypes">
+					image/png,image/gif,image/jpeg,image/pjpeg
+				</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="input" type="tiles">/DetailsInserted.tiles</result>
+			<result name="success" type="tiles">/DetailsInserted.tiles</result>
+
+		</action>
+
+		<action name="viewProfile" class="com.studentzone.action.ViewProfile">
+			<interceptor-ref name="loginStack" />
+			<result name="success" type="tiles">/ViewProfile.tiles</result>
+			<!-- <result name="error" type="tiles">/Login.tiles</result> -->
+		</action>
+
+		<!-- ********** Enroll Pages ************** -->
+		<action name="enroll" class="com.studentzone.action.EnrollAction">
+			<interceptor-ref name="loginStack" />
+			<result name="success" type="tiles">/enroll.tiles</result>
+		</action>
+
+		<action name="enrollStudent" class="com.studentzone.action.EnrollAction"
+			method="enrollStudent">
+			<interceptor-ref name="loginStack" />
+			<!-- <result name="input" type="tiles">/enroll.tiles</result> -->
+			<result name="success" type="tiles">/enrollStudentSuccess.tiles</result>
+			<result name="error" type="tiles">/enrollStudentError.tiles</result>
+		</action>
+
+		<action name="adminLogin" class="com.studentzone.admin.action.AdminLoginAction">
+			<result name="success" type="tiles">AdminLayout</result>
+			<result name="error">adminLogin.jsp</result>
+		</action>
+
+		<action name="adminHomePage" class="com.studentzone.admin.action.AdminLoginAction"
+			method="loggedIn">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">AdminLayout</result>
+			<result name="error">adminLogin.jsp</result>
+		</action>
+		
+		<action name="adminLogout" class="com.studentzone.admin.action.AdminLoginAction"
+			method="logout">
+			<result name="success">adminLogin.jsp</result>
+		</action>
+
+		<action name="newStudentRegistration"
+			class="com.studentzone.admin.action.NewStudentRegistration">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/NewStudentRegistration.tiles
+			</result>
+		</action>
+
+		<action name="editProfile" class="com.studentzone.action.EditProfileAction">
+			<interceptor-ref name="loginStack" />
+			<result name="success" type="tiles">/EditProfile.tiles</result>
+		</action>
+
+		<action name="updateProfile" class="com.studentzone.action.UpdateProfileAction">
+			<interceptor-ref name="loginStack" />
+			<result name="error" type="redirect">editProfile</result>
+			<result name="input" type="tiles">/EditProfile.tiles</result>
+			<result name="success" type="tiles">/EditProfileSuccess.tiles</result>
+		</action>
+
+		<action name="loadNews" class="com.studentzone.admin.action.InsertNews"
+			method="loadPage">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/AddNews.tiles</result>
+		</action>
+
+		<action name="addNews" class="com.studentzone.admin.action.InsertNews">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/AddNews.tiles</result>
+			<result name="error" type="tiles">/AddNews.tiles</result>
+		</action>
+
+		<!-- ********** Syllabus Pages ************** -->
+		<action name="syllabus" class="com.studentzone.action.SyllabusAction">
+			<interceptor-ref name="loginStack" />
+			<result type="tiles">/syllabus.tiles</result>
+		</action>
+
+		<!-- **********Admin Add Faculty Pages ************** -->
+		<action name="facultyForm" class="com.studentzone.admin.action.FacultyAction"
+			method="callFacultyForm">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/addFaculty.tiles</result>
+		</action>
+		<action name="faculty" class="com.studentzone.admin.action.FacultyAction"
+			method="execute">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/addFaculty.tiles</result>
+		</action>
+		 <!-- A. Nayak -->
+		<!-- **********Admin Map Faculty to Subject Pages ************** -->
+		<action name="facultySubj" class="com.studentzone.admin.action.FacultyAction"
+			method="findFacultySubj">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="input" type="tiles">/mapFacultySubj.tiles</result>
+			<result name="success" type="tiles">/mapFacultySubj.tiles</result>
+		</action>
+		<action name="subjFaculty" class="com.studentzone.admin.action.FacultyAction"
+			method="mapFacultySubj">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="input" type="tiles">/mapFacultySubj.tiles</result>
+			<result name="error" type="tiles">/mapFacultySubj.tiles</result>
+			<result name="success" type="tiles">/mapFacultySubj.tiles</result>
+		</action>
+		
+		<!-- ********** Delete Faculty Pages ************** -->
+		<action name="callFacultyDelete" class="com.studentzone.admin.action.FacultyAction"
+			method="callDelete">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/deleteFaculty.tiles</result>
+		</action>
+		<action name="delFaculty" class="com.studentzone.admin.action.FacultyAction"
+			method="deleteFaculty">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/deleteFaculty.tiles</result>
+		</action>
+		 <!-- A. Nayak -->
+		<!-- ********** Admin Insert Subject Page ************** -->
+		<action name="insertSubject" class="com.studentzone.admin.action.SubjectAction">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/insertSubject.tiles</result>
+		</action>
+
+		<!-- ********** Admin Insert Enrollment Page ************** -->
+		<action name="insertEnrollment" class="com.studentzone.admin.action.EnrollmentAction">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/insertEnrollment.tiles</result>
+			<result name="error" type="tiles">/ErrorAdmin.tiles</result>
+		</action>
+
+		<!-- ********** Admin Update Grades Page ************** -->
+		 <!-- D. Sarkar -->
+		<action name="loadGrades" class="com.studentzone.admin.action.GradesAction"
+			method="loadPage">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/updateGrades.tiles</result>
+		</action>
+		
+		<action name="updateGrades" class="com.studentzone.admin.action.GradesAction"
+			method="updateGrades">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/updateGrades.tiles</result>
+		</action>
+		 <!-- D. Sarkar -->
+		<!-- ********** Admin News ************* -->
+		<action name="addNews">
+			<interceptor-ref name="adminLoginStack" />
+			<result type="tiles">/addNews.tiles</result>
+		</action>
+		<action name="insertNews" class="com.studentzone.admin.action.InsertNews">
+			<interceptor-ref name="adminLoginStack" />
+			<result type="tiles" name="SUCCESS">/addNews.tiles</result>
+			<result type="tiles" name="ERROR">/addNews.tiles</result>
+		</action>
+		<!-- ******end of Admin News************ -->
+		<!-- ********** Add Syllabus ************* -->
+		<action name="addSyllabus" class="com.studentzone.admin.action.GetSubForSyl">
+			<interceptor-ref name="adminLoginStack" />
+			<result type="tiles" name="SUCCESS">/addSyllabus.tiles</result>
+		</action>
+		<action name="insertSyllabus" class="com.studentzone.admin.action.insertSyllabus">
+			<interceptor-ref name="adminLoginStack" />
+			<result type="tiles" name="SUCCESS">/addSyllabus.tiles</result>
+			<result type="tiles" name="ERROR">/addSyllabus.tiles</result>
+		</action>
+		<action name="getSyllabus" class="com.studentzone.admin.action.GetSyllabusAction">
+			<interceptor-ref name="adminLoginStack" />
+			<result type="tiles" name="SUCCESS">/addSyllabus.tiles</result>
+		</action>
+		<!-- ******end of Add Syllabus************ -->
+
+		<!-- #########################       ritu         #####################-->
+		<action name="deleteStudent"
+			class="com.studentzone.admin.action.DeleteStudentAction">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/DeleteStudent.tiles
+			</result>
+		</action>
+		<action name="deleteStudentFromDatabase"
+			class="com.studentzone.admin.action.DeleteStudentAction" method="deleteStudent">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/DeleteStudentFromDatabase.tiles</result>
+			<result name="error" type="tiles">/ErrorAdmin.tiles</result>
+		</action>
+		<action name="addAnnouncement" class="com.studentzone.admin.action.AddAnnouncement">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/AddAnnouncement.tiles
+			</result>
+		</action>
+		
+		<action name="insertAnnouncement" class="com.studentzone.admin.action.InsertAnnouncementAction">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/InsertAnnouncement.tiles</result>
+			<result name="error" type="tiles">/ErrorAdmin.tiles</result>
+		</action>
+		<action name="deleteAnnouncement" class="com.studentzone.admin.action.InsertAnnouncementAction" method="deleteAnnouncementAction">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/DeleteAnnouncement.tiles</result>
+			<result name="error" type="tiles">/ErrorAdmin.tiles</result>
+		</action>
+		<action name="deleteAnnouncementFromDatabase" class="com.studentzone.admin.action.InsertAnnouncementAction" method="deleteAnnouncementFromDatabase">
+			<interceptor-ref name="adminLoginStack" />
+			<result name="success" type="tiles">/DeleteAnnouncementsuccess.tiles</result>
+			<result name="error" type="tiles">/ErrorAdmin.tiles</result>
+		</action>
+		<!-- #########################      end ritu's part         #####################-->
+	</package>
+</struts>

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model
+END
+DeleteStudent.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/DeleteStudent.java
+END
+GetSyllabusModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/GetSyllabusModel.java
+END
+Subject.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/Subject.java
+END
+insertSyllabusModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/insertSyllabusModel.java
+END
+ManageGradesModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/ManageGradesModel.java
+END
+EnrollmentModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/EnrollmentModel.java
+END
+FacultyModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/FacultyModel.java
+END
+Syllabus.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/Syllabus.java
+END
+Enrollment.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/Enrollment.java
+END
+Faculty.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/Faculty.java
+END
+ManageGrades.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/ManageGrades.java
+END
+InsertAnnouncement.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/InsertAnnouncement.java
+END
+InsertStudentDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/InsertStudentDetails.java
+END
+SubjectModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/SubjectModel.java
+END
+NewsInsertion.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/model/NewsInsertion.java
+END

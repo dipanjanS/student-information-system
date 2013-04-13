@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3/trunk/studentzone/resources/com/mysql/jdbc/authentication
+END
+MysqlNativePasswordPlugin.class
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/3/trunk/studentzone/resources/com/mysql/jdbc/authentication/MysqlNativePasswordPlugin.class
+END
+MysqlClearPasswordPlugin.class
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/3/trunk/studentzone/resources/com/mysql/jdbc/authentication/MysqlClearPasswordPlugin.class
+END
+MysqlOldPasswordPlugin.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/3/trunk/studentzone/resources/com/mysql/jdbc/authentication/MysqlOldPasswordPlugin.class
+END
+Sha256PasswordPlugin.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/3/trunk/studentzone/resources/com/mysql/jdbc/authentication/Sha256PasswordPlugin.class
+END

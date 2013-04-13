@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/17/trunk/studentzone/WebContent
+END
+errorAdmin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3/trunk/studentzone/WebContent/errorAdmin.jsp
+END
+myfriends.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/12/trunk/studentzone/WebContent/myfriends.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/3/trunk/studentzone/WebContent/login.jsp
+END
+mapFacultySubj.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3/trunk/studentzone/WebContent/mapFacultySubj.jsp
+END
+friendsprofile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/12/trunk/studentzone/WebContent/friendsprofile.jsp
+END
+dummypage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/studentzone/WebContent/dummypage.jsp
+END
+deleteFaculty.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/15/trunk/studentzone/WebContent/deleteFaculty.jsp
+END
+AdminLayout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3/trunk/studentzone/WebContent/AdminLayout.jsp
+END
+detailsInserted.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3/trunk/studentzone/WebContent/detailsInserted.jsp
+END
+BaseLayout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3/trunk/studentzone/WebContent/BaseLayout.jsp
+END
+adminHeader.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3/trunk/studentzone/WebContent/adminHeader.jsp
+END
+grades.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3/trunk/studentzone/WebContent/grades.jsp
+END
+adminHomePage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3/trunk/studentzone/WebContent/adminHomePage.jsp
+END
+forgotpassword.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3/trunk/studentzone/WebContent/forgotpassword.jsp
+END
+announcementInserted.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3/trunk/studentzone/WebContent/announcementInserted.jsp
+END
+editProfile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/25/trunk/studentzone/WebContent/editProfile.jsp
+END
+addFaculty.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/14/trunk/studentzone/WebContent/addFaculty.jsp
+END
+showannouncement.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3/trunk/studentzone/WebContent/showannouncement.jsp
+END
+editProfileSuccess.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3/trunk/studentzone/WebContent/editProfileSuccess.jsp
+END
+subjectInsert.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3/trunk/studentzone/WebContent/subjectInsert.jsp
+END
+subjects.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/3/trunk/studentzone/WebContent/subjects.jsp
+END
+addAnnouncement.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3/trunk/studentzone/WebContent/addAnnouncement.jsp
+END
+studentnotfound.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3/trunk/studentzone/WebContent/studentnotfound.jsp
+END
+adminFooter.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3/trunk/studentzone/WebContent/adminFooter.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/12/trunk/studentzone/WebContent/header.jsp
+END
+welcomeAdmin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3/trunk/studentzone/WebContent/welcomeAdmin.jsp
+END
+errorEnroll.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/7/trunk/studentzone/WebContent/errorEnroll.jsp
+END
+deleteStudent.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3/trunk/studentzone/WebContent/deleteStudent.jsp
+END
+showNEWS.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/3/trunk/studentzone/WebContent/showNEWS.jsp
+END
+deleteAnnouncementSuccess.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/3/trunk/studentzone/WebContent/deleteAnnouncementSuccess.jsp
+END
+deleteAnnouncement.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3/trunk/studentzone/WebContent/deleteAnnouncement.jsp
+END
+deleteStudentSuccess.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3/trunk/studentzone/WebContent/deleteStudentSuccess.jsp
+END
+addNews.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/3/trunk/studentzone/WebContent/addNews.jsp
+END
+newStudentRegistration.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/3/trunk/studentzone/WebContent/newStudentRegistration.jsp
+END
+adminLogin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3/trunk/studentzone/WebContent/adminLogin.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3/trunk/studentzone/WebContent/footer.jsp
+END
+enrollmentInsert.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3/trunk/studentzone/WebContent/enrollmentInsert.jsp
+END
+home.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/3/trunk/studentzone/WebContent/home.jsp
+END
+menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/3/trunk/studentzone/WebContent/menu.jsp
+END
+successfulEnroll.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3/trunk/studentzone/WebContent/successfulEnroll.jsp
+END
+welcome.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/3/trunk/studentzone/WebContent/welcome.jsp
+END
+ViewProfile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/25/trunk/studentzone/WebContent/ViewProfile.jsp
+END
+syllabus.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/3/trunk/studentzone/WebContent/syllabus.jsp
+END
+updateGrades.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/trunk/studentzone/WebContent/updateGrades.jsp
+END
+enroll.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/7/trunk/studentzone/WebContent/enroll.jsp
+END
+addSyllabus.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3/trunk/studentzone/WebContent/addSyllabus.jsp
+END

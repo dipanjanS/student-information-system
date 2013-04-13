@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/10/trunk/studentzone/src/com/studentzone/util
+END
+MySqlConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/util/MySqlConnection.java
+END
+GeneratePassword.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/util/GeneratePassword.java
+END
+DB.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/util/DB.java
+END
+MyUtilityFunctions.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/util/MyUtilityFunctions.java
+END
+RuntimeSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/10/trunk/studentzone/src/com/studentzone/util/RuntimeSettings.java
+END
+EmailValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/util/EmailValidator.java
+END

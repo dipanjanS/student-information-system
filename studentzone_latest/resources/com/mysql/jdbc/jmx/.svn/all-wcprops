@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3/trunk/studentzone/resources/com/mysql/jdbc/jmx
+END
+LoadBalanceConnectionGroupManagerMBean.class
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/3/trunk/studentzone/resources/com/mysql/jdbc/jmx/LoadBalanceConnectionGroupManagerMBean.class
+END
+LoadBalanceConnectionGroupManager.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/3/trunk/studentzone/resources/com/mysql/jdbc/jmx/LoadBalanceConnectionGroupManager.class
+END

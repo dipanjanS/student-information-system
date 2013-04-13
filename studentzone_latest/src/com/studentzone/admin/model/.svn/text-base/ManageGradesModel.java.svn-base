@@ -1,0 +1,70 @@
+package com.studentzone.admin.model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.studentzone.util.MySqlConnection;
+
+public class ManageGradesModel {
+	
+	/*
+	 * to work with DB
+	 */
+	static PreparedStatement statement=null;
+	static String sqlQuery="";
+	static ResultSet rs=null;
+	/*
+	 * inserting values into grade table
+	 */
+	public static void insertGradeDetails(ManageGrades obj) throws SQLException{
+	
+		Connection con=MySqlConnection.getInstance().getConnection();
+
+		try{
+			sqlQuery = "use studentzone;";
+			statement=con.prepareStatement(sqlQuery);
+			statement.execute();
+			String roll = obj.getStudentRollNo();
+			String subCode = obj.getSubjectCode();
+			String grade = obj.getSubjectGrade();
+			String result = obj.getSubjectResult(); 
+			
+			int studentID=0;
+			sqlQuery = "select studentID from studentzone_student_profile where studentRollNo=?;";
+			statement = con.prepareStatement(sqlQuery);
+			statement.setString(1,roll);
+			rs=statement.executeQuery();
+			while(rs.next()){
+				studentID = rs.getInt(1);
+			}
+			
+			int subjectID=0;
+			sqlQuery = "select subjectID from studentzone_subject where subjectCode=?;";
+			statement = con.prepareStatement(sqlQuery);
+			statement.setString(1,subCode);
+			rs=statement.executeQuery();
+			while(rs.next()){
+				subjectID = rs.getInt(1);
+			}
+			
+			sqlQuery = "insert into studentzone_grade(subjectGrade, subjectResult, studentID, subjectID) " +
+					"values(?,?,?,?);";
+			statement=con.prepareStatement(sqlQuery);
+			statement.setString(1, grade);
+			statement.setString(2, result);
+			statement.setInt(3, studentID);
+			statement.setInt(4, subjectID);
+			statement.executeUpdate();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		finally{
+			statement.close();
+			con.close();
+		}
+	}
+
+}

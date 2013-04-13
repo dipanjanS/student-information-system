@@ -1,0 +1,54 @@
+package com.studentzone.admin.model;
+
+public class ManageGrades {
+	
+	private String studentRollNo;
+	private String subjectCode;
+	private String subjectGrade;
+	private String subjectResult;
+	private String gradeDate;
+	
+	
+	
+	public String getGradeDate() {
+		return gradeDate;
+	}
+
+	public void setGradeDate(String gradeDate) {
+		this.gradeDate = gradeDate;
+	}
+
+	public String getStudentRollNo() {
+		return studentRollNo;
+	}
+	
+	public void setStudentRollNo(String studentRollNo) {
+		this.studentRollNo = studentRollNo;
+	}
+	
+	public String getSubjectCode() {
+		return subjectCode;
+	}
+	
+	public void setSubjectCode(String subjectCode) {
+		this.subjectCode = subjectCode;
+	}
+	
+	public String getSubjectGrade() {
+		return subjectGrade;
+	}
+	
+	public void setSubjectGrade(String subjectGrade) {
+		this.subjectGrade = subjectGrade;
+	}
+	
+	public String getSubjectResult() {
+		return subjectResult;
+	}
+	
+	public void setSubjectResult(String subjectResult) {
+		this.subjectResult = subjectResult;
+	}
+	
+
+}

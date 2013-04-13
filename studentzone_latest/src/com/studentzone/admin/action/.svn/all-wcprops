@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/22/trunk/studentzone/src/com/studentzone/admin/action
+END
+AdminLoginAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/AdminLoginAction.java
+END
+WelcomeAdmin.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/WelcomeAdmin.java
+END
+InsertNews.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/InsertNews.java
+END
+AddAnnouncement.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/AddAnnouncement.java
+END
+GetSubForSyl.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/GetSubForSyl.java
+END
+DeleteStudentAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/DeleteStudentAction.java
+END
+SubjectAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/SubjectAction.java
+END
+insertSyllabus.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/insertSyllabus.java
+END
+DetailsInserted.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/DetailsInserted.java
+END
+FacultyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/22/trunk/studentzone/src/com/studentzone/admin/action/FacultyAction.java
+END
+EnrollmentAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/19/trunk/studentzone/src/com/studentzone/admin/action/EnrollmentAction.java
+END
+InsertAnnouncementAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/InsertAnnouncementAction.java
+END
+NewStudentRegistration.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/NewStudentRegistration.java
+END
+GradesAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/18/trunk/studentzone/src/com/studentzone/admin/action/GradesAction.java
+END
+GetSyllabusAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3/trunk/studentzone/src/com/studentzone/admin/action/GetSyllabusAction.java
+END
