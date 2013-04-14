@@ -13,11 +13,3 @@ Developed using:
 4. MySQL
 
 Special credits to Bootstrap from Twitter and Bootswatch.
-
-
-
-
-student-information-system
-==========================
-
-This project 
